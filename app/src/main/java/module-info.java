@@ -1,4 +1,6 @@
-module task.preparation {
+module task.app {
+
+    requires jdk.unsupported;//for netty low-level API access
 
     //compile dependencies
     requires spring.boot;
@@ -12,6 +14,4 @@ module task.preparation {
     requires spring.beans;
 
 
-
-    requires jdk.unsupported;//for netty low-level API access
 }
