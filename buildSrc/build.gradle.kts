@@ -66,6 +66,8 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter")
     runtimeOnly("com.h2database:h2")
     runtimeOnly("org.postgresql:postgresql")
+    implementation("io.r2dbc:r2dbc-spi:0.8.6.RELEASE")
+    implementation("io.r2dbc:r2dbc-postgresql:0.8.6.RELEASE")
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("io.projectreactor:reactor-test")

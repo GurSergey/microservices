@@ -11,7 +11,7 @@ dependencies {
 //    implementation("org.springframework.boot:spring-boot-starter-jooq")
     implementation("org.springframework.boot:spring-boot-starter-oauth2-client")
     implementation("org.springframework.boot:spring-boot-starter-rsocket")
-    implementation("org.springframework.boot:spring-boot-starter-security")
+//    implementation("org.springframework.boot:spring-boot-starter-security")
     implementation("org.springframework.boot:spring-boot-starter-webflux")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("io.projectreactor.kotlin:reactor-kotlin-extensions")
@@ -20,8 +20,10 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
-    implementation("org.springframework.security:spring-security-messaging")
-    implementation("org.springframework.security:spring-security-rsocket")
+//    implementation("org.springframework.security:spring-security-messaging")
+//    implementation("org.springframework.security:spring-security-rsocket")
+    implementation("io.r2dbc:r2dbc-spi")
+    implementation("io.r2dbc:r2dbc-postgresql")
     runtimeOnly("com.h2database:h2")
     runtimeOnly("org.postgresql:postgresql")
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
@@ -31,5 +33,5 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass.set("task.app.App")
+    mainClass.set("task.Application")
 }
